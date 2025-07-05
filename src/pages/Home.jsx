@@ -1,7 +1,10 @@
 import { useTheme } from "../contexts/ThemeContext.jsx"
+import { useAPI } from "../hooks"
 
 const Home = () => {
     const { theme } = useTheme()
+
+    const { data, loading, error } = useAPI("/posts/1")
 
     const containerStyle =
         theme === "light"
@@ -28,6 +31,11 @@ const Home = () => {
             <p className={`mt-4 text-center ${paragraphStyle}`}>
                 This is a simple PWA template using React, TailwindCSS and React-Router-DOM in JSX.
             </p>
+            <div className={`mt-4 text-center ${containerStyle}`}>
+                {loading && <p>Loading data...</p>}
+                {error && <p className="text-red-500">Error: {error}</p>}
+                {data && <p>Fetched Data: {data.title}</p>}
+            </div>
         </div>
     )
 }
