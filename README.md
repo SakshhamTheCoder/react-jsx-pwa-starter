@@ -26,7 +26,7 @@ The motivation behind this template was to create an easy-to-use, beginner-frien
 -   **State Management**: Context API for global state handling
 -   **Project Structure**: Organized folder structure for easy navigation
 -   **Performance**: Optimized bundle size with Vite
--   **Code Quality**: ESLint, Prettier integration
+-   **Code Quality**: ESLint integration for maintaining code quality
 -   **API Integration**: Axios-based `apiClient` and `useAPI` hook for seamless API requests
 
 ## 🚀 Getting Started
