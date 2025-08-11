@@ -1,14 +1,19 @@
 # React JSX SPA Starter Template
 
-## 🌟 Overview
+## Overview
 
 **React JSX SPA Starter Template** is a bare-minimum starter kit for building Single Page Applications with React. It provides a simple and minimal setup, making it easy for beginners to get started. The template includes essential tools and configurations, allowing you to focus on adding features and customizing the app as per your needs.
 
-## 💡 Motivation
+## Motivation
 
 The motivation behind this template was to create an easy-to-use, beginner-friendly setup for building SPAs in JavaScript. While there are similar templates available with more advanced setups in TypeScript, this project aims to simplify the process for those new to React and SPA development. Some basic configurations have already been done to make future enhancements easier, ensuring a smooth learning curve for beginners.
 
-## ✨ Tech Stack & Features
+## Screenshots
+
+![Screenshot Light Theme](screenshot1.png)
+![Screenshot Dark Theme](screenshot2.png)
+
+## Tech Stack & Features
 
 ### Core Technologies
 
@@ -29,7 +34,7 @@ The motivation behind this template was to create an easy-to-use, beginner-frien
 -   **Code Quality**: ESLint integration for maintaining code quality
 -   **API Integration**: Axios-based `apiClient` and `useAPI` hook for seamless API requests
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Quick Start
 
@@ -47,7 +52,7 @@ npm run dev
 npm run build
 ```
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 src/
@@ -64,7 +69,7 @@ src/
 
 This structure ensures a clean and organized codebase, making it easier to navigate and extend.
 
-## 🔧 API Integration with `useAPI`
+## API Integration with `useAPI`
 
 This template includes a custom `useAPI` hook for making API requests. It is built on top of an Axios-based `apiClient` and provides a simple way to handle API calls with support for:
 
@@ -102,7 +107,7 @@ const { data, loading, error } = useAPI('/example-endpoint', {
 
 The `useAPI` hook ensures a consistent and reusable way to interact with APIs, making it easier to manage API calls in your React components.
 
-## ❓ FAQ
+## FAQ
 
 ### Why does the API get called twice when I check the network requests?
 
@@ -171,11 +176,11 @@ This template uses React Context for basic global state management. If your app 
 2. Add your variables prefixed with `VITE_` (e.g., `VITE_API_KEY=your_api_key`).
 3. Access them in your code using `import.meta.env.VITE_API_KEY`.
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork this repository and customize it to suit your needs. Contributions are welcome!
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
 
