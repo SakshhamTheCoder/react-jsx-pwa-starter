@@ -2,7 +2,7 @@
 
 ## 🌟 Overview
 
-**React JSX SPA Starter Template** is a bare-minimum starter kit for building Progressive Web Applications with React. It provides a simple and minimal setup, making it easy for beginners to get started. The template includes essential tools and configurations, allowing you to focus on adding features and customizing the app as per your needs.
+**React JSX SPA Starter Template** is a bare-minimum starter kit for building Single Page Applications with React. It provides a simple and minimal setup, making it easy for beginners to get started. The template includes essential tools and configurations, allowing you to focus on adding features and customizing the app as per your needs.
 
 ## 💡 Motivation
 
@@ -152,7 +152,7 @@ children: [
 
 ### Why is my API request failing?
 
-1. Check the `baseURL` in `apiClient.js` to ensure it points to the correct API endpoint.
+1. Check the `baseURL` in `apiClient.jsx` to ensure it points to the correct API endpoint.
 2. Verify that the API server is running and accessible.
 3. Ensure that any required headers (e.g., Authorization) are correctly set in the `apiClient` or `useAPI` hook.
 
