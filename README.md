@@ -1,12 +1,12 @@
-# React JSX PWA Starter Template
+# React JSX SPA Starter Template
 
 ## 🌟 Overview
 
-**React JSX PWA Starter Template** is a bare-minimum starter kit for building Progressive Web Applications with React. It provides a simple and minimal setup, making it easy for beginners to get started. The template includes essential tools and configurations, allowing you to focus on adding features and customizing the app as per your needs.
+**React JSX SPA Starter Template** is a bare-minimum starter kit for building Progressive Web Applications with React. It provides a simple and minimal setup, making it easy for beginners to get started. The template includes essential tools and configurations, allowing you to focus on adding features and customizing the app as per your needs.
 
 ## 💡 Motivation
 
-The motivation behind this template was to create an easy-to-use, beginner-friendly setup for building PWAs in JavaScript. While there are similar templates available with more advanced setups in TypeScript, this project aims to simplify the process for those new to React and PWA development. Some basic configurations have already been done to make future enhancements easier, ensuring a smooth learning curve for beginners.
+The motivation behind this template was to create an easy-to-use, beginner-friendly setup for building SPAs in JavaScript. While there are similar templates available with more advanced setups in TypeScript, this project aims to simplify the process for those new to React and SPA development. Some basic configurations have already been done to make future enhancements easier, ensuring a smooth learning curve for beginners.
 
 ## ✨ Tech Stack & Features
 
@@ -35,7 +35,7 @@ The motivation behind this template was to create an easy-to-use, beginner-frien
 
 ```bash
 # Clone the repository
-git clone https://github.com/SakshhamTheCoder/react-jsx-pwa-starter.git
+git clone https://github.com/SakshhamTheCoder/react-jsx-spa-starter.git
 
 # Install dependencies
 npm install
@@ -77,17 +77,17 @@ This template includes a custom `useAPI` hook for making API requests. It is bui
 #### Fetching Data (GET Request)
 
 ```javascript
-import { useAPI } from '../hooks/useAPI'
+import { useAPI } from '../hooks/useAPI';
 
 const ExampleComponent = () => {
     const { data, loading, error } = useAPI('/example-endpoint', {
         method: 'GET',
-    })
+    });
 
-    if (loading) return <p>Loading...</p>
-    if (error) return <p>Error: {error}</p>
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error}</p>;
 
-    return <div>Data: {JSON.stringify(data)}</div>
+    return <div>Data: {JSON.stringify(data)}</div>;
 };
 ```
 
@@ -114,16 +114,16 @@ If you want to prevent this behavior, you can remove `StrictMode` from your `mai
 
 ```jsx
 // src/main.jsx
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { ThemeProvider } from './contexts'
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import App from './App.jsx';
+import { ThemeProvider } from './contexts';
 
 createRoot(document.getElementById('root')).render(
     <ThemeProvider>
         <App />
     </ThemeProvider>
-)
+);
 ```
 
 However, it is recommended to keep `StrictMode` enabled during development to catch potential issues early.
